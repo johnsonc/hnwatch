@@ -1,4 +1,7 @@
 # hnwatch
+
+[![Build Status](https://travis-ci.org/vetelko/hnwatch.svg?branch=master)](https://travis-ci.org/vetelko/hnwatch)
+
 The idea behind this little project is don't procrastinate on HN
 and never miss a story, job, or project I'm interested in.
 
