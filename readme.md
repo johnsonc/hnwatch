@@ -15,8 +15,11 @@ Program runs in for cycle with pause between cycles,
 default pause is 10 minutes. Please don't abuse HN :)
 
 ### Install
-git clone https://github.com/vetelko/hnwatch
-go build -ld_flags="-s -w"
+```
+$ git clone https://github.com/vetelko/hnwatch
+$ cd hnwatch
+$ go build -ldflags="-s -w"
+```
 
 ### Examples
 Fetch all HN news from homepage
