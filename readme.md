@@ -1,4 +1,4 @@
-# hnwatch
+# About
 
 [![Build Status](https://travis-ci.org/vetelko/hnwatch.svg?branch=master)](https://travis-ci.org/vetelko/hnwatch)
 
@@ -14,6 +14,11 @@ You will never get the same story for the same term twice.
 Program runs in for cycle with pause between cycles,
 default pause is 10 minutes. Please don't abuse HN :)
 
+### Install
+git clone https://github.com/vetelko/hnwatch
+go build -ld_flags="-s -w"
+
+### Examples
 Fetch all HN news from homepage
 ```
 ./hnwatch -t "Ask HN"
