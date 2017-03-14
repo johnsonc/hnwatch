@@ -21,6 +21,21 @@ $ cd hnwatch
 $ go build -ldflags="-s -w"
 ```
 
+### Usage
+```
+Usage of ./hnwatch:
+  -c string
+        path to configuration file (default "hnwatch.cfg")
+  -e bool
+        send output as email message (default true)
+  -r int
+        repeat checking after N minutes (default 10)
+  -t string
+        term(s) to find in item title, can be regexp
+  -u string
+        url containing items (default "https://news.ycombinator.com/")
+```
+
 ### Examples
 Fetch all HN news from homepage
 ```
