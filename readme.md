@@ -21,6 +21,10 @@ $ cd hnwatch
 $ go build -ldflags="-s -w"
 ```
 
+### Config
+Configuration is stored in hnwatch.cfg file. Currently there is only configuration
+for sending e-mail alerts.
+
 ### Usage
 ```
 Usage of ./hnwatch:
@@ -37,34 +41,41 @@ Usage of ./hnwatch:
 ```
 
 ### Examples
-Fetch all HN news from homepage
+Fetch all HN news from homepage. Next check after 10 minutes.
 ```
-./hnwatch -t "Ask HN"
+./hnwatch
 ```
+
 Fetch HN news containing term(s) **Ask HN** in title
 ```
 ./hnwatch -t "Ask HN"
 ```
+
 Fetch HN news containing term(s) **Ask HN** in title, repeat checking after 30 minutes (default is 10 minutes)
 ```
 ./hnwatch -t "Ask HN" -r 30
 ```
+
 Fetch HN news containing term(s) **google or microsoft** in title
 ```
 ./hnwatch -t "google|microsoft"
 ```
+
 Fetch HN **job** news containing term(s) **google or devops** in title
 ```
 ./hnwatch -u https://news.ycombinator.com/jobs -t "google|devops"
 ```
+
 Fetch HN **show** news containing term(s) **golang or project** in title
 ```
 ./hnwatch -u https://news.ycombinator.com/show -t "golang|project"
 ```
+
 Fetch HN **show** news containing term(s) **golang or project** in title using **other.cfg** as config file
 ```
 ./hnwatch -u https://news.ycombinator.com/show -t "golang|project" -c other.cfg
 ```
+
 Fetch HN **show** news containing term(s) **golang or project** in title, send results to email
 ```
 ./hnwatch -u https://news.ycombinator.com/show -t "golang|project" -e=true
