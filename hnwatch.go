@@ -22,6 +22,7 @@ import (
 )
 
 const (
+	version     = "0.1"
 	baseURL     = "https://news.ycombinator.com/"
 	commentsURL = "https://news.ycombinator.com/item?id="
 )
@@ -215,6 +216,7 @@ func main() {
 	var round = 1
 	var cfg, _ = readConfig(*c, "")
 	var item Item
+
 	for {
 		if *term != "" {
 			fmt.Printf("Round: %d for term: %s\n", round, *term)
