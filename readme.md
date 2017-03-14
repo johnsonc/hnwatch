@@ -15,7 +15,7 @@ You will never get the same story for the same term twice.
 Program runs in for cycle with pause between cycles,
 default pause is 10 minutes. Please don't abuse HN :)
 
-### Install
+### Build
 ```
 $ git clone https://github.com/vetelko/hnwatch
 $ cd hnwatch
@@ -26,7 +26,7 @@ $ go build -ldflags="-s -w"
 Configuration is stored in hnwatch.cfg file. Currently there is only configuration
 for sending e-mail alerts.
 
-### Usage
+### Run
 ```
 Usage of ./hnwatch:
   -c string
