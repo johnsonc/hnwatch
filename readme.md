@@ -13,7 +13,7 @@ in the title. To define term, you can use plain text or regular expressions.
 SQLite 3 is used to store fetched stories.
 You will never get the same story for the same term twice.
 
-Program runs in for cycle with pause between cycles,
+Program uses never-ending for{} cycle with pause between cycles,
 default pause is 30 minutes according to HN robots.txt. Please don't abuse HN :)
 
 ### Build
