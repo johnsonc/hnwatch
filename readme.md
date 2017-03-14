@@ -26,6 +26,10 @@ $ go build -ldflags="-s -w"
 Configuration is stored in hnwatch.cfg file. Currently there is only configuration
 for sending e-mail alerts.
 
+### Storage
+SQLite3 database file hnwatch.db is created automatically on the first run of
+the application
+
 ### Run
 ```
 Usage of ./hnwatch:
