@@ -2,7 +2,7 @@
 The idea behind this little project is don't procrastinate on HN
 and never miss a story, job, or project I'm interested in.
 
-You can fetch all new stories or stories containing particular terms
+You can fetch all new stories, or stories containing particular terms
 in the title. To define term, you can use plain text or regular expressions.
 
 SQLite 3 is used to store fetched stories.
