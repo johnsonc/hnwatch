@@ -13,7 +13,7 @@ SQLite 3 is used to store fetched stories.
 You will never get the same story for the same term twice.
 
 Program runs in for cycle with pause between cycles,
-default pause is 10 minutes. Please don't abuse HN :)
+default pause is 30 minutes according to HN robots.txt. Please don't abuse HN :)
 
 ### Build
 ```
@@ -34,7 +34,7 @@ Usage of ./hnwatch:
   -e bool
         send output as email message (default true)
   -r int
-        repeat checking after N minutes (default 10)
+        repeat checking after N minutes (default 30)
   -t string
         term(s) to find in item title, can be regexp
   -u string
@@ -42,7 +42,7 @@ Usage of ./hnwatch:
 ```
 
 ### Examples
-Fetch all HN news from homepage. Next check after 10 minutes.
+Fetch all HN news from homepage. Next check after 30 minutes.
 ```
 ./hnwatch
 ```
@@ -52,9 +52,9 @@ Fetch HN news containing term(s) **Ask HN** in title
 ./hnwatch -t "Ask HN"
 ```
 
-Fetch HN news containing term(s) **Ask HN** in title, repeat checking after 30 minutes (default is 10 minutes)
+Fetch HN news containing term(s) **Ask HN** in title, repeat checking after 60 minutes (default is 30 minutes)
 ```
-./hnwatch -t "Ask HN" -r 30
+./hnwatch -t "Ask HN" -r 60
 ```
 
 Fetch HN news containing term(s) **google or microsoft** in title

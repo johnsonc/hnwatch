@@ -209,7 +209,7 @@ func dbItemFilter(items []Item, term string) (outText, outHTML string) {
 func main() {
 	var c = flag.String("c", "hnwatch.cfg", "path to configuration file")
 	var e = flag.Bool("e", true, "send output as email message")
-	var r = flag.Int("r", 10, "repeat checking after N minutes")
+	var r = flag.Int("r", 30, "repeat checking after N minutes")
 	var term = flag.String("t", "", "term(s) to find in item title, can be regexp")
 	var url = flag.String("u", "https://news.ycombinator.com/", "url containing items")
 	flag.Parse()
