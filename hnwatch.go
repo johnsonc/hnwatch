@@ -1,5 +1,6 @@
-// TODO: split code into multiple files
-// 	 is premature optimization the root of all evil ??
+// TODO: split code into multiple files.
+// Is premature optimization the root of all evil? :)
+
 package main
 
 import (
@@ -206,11 +207,11 @@ func dbItemFilter(items []Item, term string) (outText, outHTML string) {
 }
 
 func main() {
-	var url = flag.String("u", "https://news.ycombinator.com/", "url containing items")
-	var term = flag.String("t", "", "term(s) to find in item title, can be regexp")
 	var c = flag.String("c", "hnwatch.cfg", "path to configuration file")
-	var r = flag.Int("r", 10, "repeat checking after N minutes")
 	var e = flag.Bool("e", true, "send output as email message")
+	var r = flag.Int("r", 10, "repeat checking after N minutes")
+	var term = flag.String("t", "", "term(s) to find in item title, can be regexp")
+	var url = flag.String("u", "https://news.ycombinator.com/", "url containing items")
 	flag.Parse()
 
 	var round = 1
