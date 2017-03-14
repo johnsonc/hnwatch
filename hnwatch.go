@@ -209,6 +209,7 @@ func main() {
 	var term = flag.String("t", "", "term(s) to find in item title, can be regexp")
 	var c = flag.String("c", "hnwatch.cfg", "path to configuration file")
 	var r = flag.Int("r", 10, "repeat checking after N minutes")
+	var e = flag.Bool("e", true, "send output as email message")
 	flag.Parse()
 
 	var round = 1
@@ -225,7 +226,9 @@ func main() {
 		outText, outHTML := dbItemFilter(items, *term)
 
 		fmt.Print(outText)
-		email(cfg, "Test", fmt.Sprintf(emailTemplate, outHTML))
+		if *e {
+			email(cfg, "Test", fmt.Sprintf(emailTemplate, outHTML))
+		}
 		fmt.Printf("Next round in %d minute(s)\n\n", *r)
 		round++
 		time.Sleep(time.Duration(*r) * time.Minute)
