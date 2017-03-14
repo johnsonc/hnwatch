@@ -3,10 +3,10 @@
 [![Build Status](https://travis-ci.org/vetelko/hnwatch.svg?branch=master)](https://travis-ci.org/vetelko/hnwatch)
 
 I actually started programming last year in my 43y :) My first language
-is GO. I also learn TCL even it's not a mainstream language. The idea behind
-this little project is don't procrastinate on HN and never miss a story, job,
-or project I'm interested in.
+is GO. I also learn TCL even it's not a mainstream language.
 
+The idea behind this little project is don't procrastinate on HN and never
+miss a story, job, or project I'm interested in.
 You can fetch all new stories, or stories containing particular terms
 in the title. To define term, you can use plain text or regular expressions.
 SQLite 3 is used to store fetched stories.
