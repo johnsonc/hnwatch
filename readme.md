@@ -43,6 +43,8 @@ Usage of ./hnwatch:
         send output as email message (default true)
   -r int
         repeat checking after N minutes (default 30)
+  -s string
+        email subject (default "New stories at https://news.ycombinator.com/")
   -t string
         term(s) to find in item title, can be regexp
   -u string
@@ -58,6 +60,11 @@ Fetch all HN news from homepage. Next check after 30 minutes.
 Fetch HN news containing term(s) **Ask HN** in title
 ```
 ./hnwatch -t "Ask HN"
+```
+
+Fetch HN news containing term(s) **Ask HN** in title, send email with subject "New on Ask HN"
+```
+./hnwatch -t "Ask HN" -s "New on Ask HN"
 ```
 
 Fetch HN news containing term(s) **Ask HN** in title, repeat checking after 60 minutes (default is 30 minutes)
