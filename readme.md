@@ -2,9 +2,7 @@
 
 [![Build Status](https://travis-ci.org/vetelko/hnwatch.svg?branch=master)](https://travis-ci.org/vetelko/hnwatch)
 
-I actually started programming last year in my 43, so I appologize for any
-inconvenience :) My first/main language is Golang. I also learn TCL and newLISP
-even it's not a mainstream.
+[About me](https://github.com/vetelko/about-me)
 
 The idea behind this little project is don't procrastinate on HN and never
 miss a story, job, or project I'm interested in.
