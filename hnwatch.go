@@ -210,6 +210,7 @@ func main() {
 	var c = flag.String("c", "hnwatch.cfg", "path to configuration file")
 	var e = flag.Bool("e", true, "send output as email message")
 	var r = flag.Int("r", 30, "repeat checking after N minutes")
+	var s = flag.String("s", "", "email subject")
 	var term = flag.String("t", "", "term(s) to find in item title, can be regexp")
 	var url = flag.String("u", "https://news.ycombinator.com/", "url containing items")
 	flag.Parse()
@@ -225,12 +226,16 @@ func main() {
 			fmt.Printf("Round: %d\n", round)
 		}
 
+		if *s == "" {
+			*s = "New stories at " + *url
+		}
+
 		items := item.parseItems(*url, *term)
 		outText, outHTML := dbItemFilter(items, *term)
 
 		fmt.Print(outText)
 		if *e {
-			email(cfg, "Test", fmt.Sprintf(emailTemplate, outHTML))
+			email(cfg, *s, fmt.Sprintf(emailTemplate, outHTML))
 		}
 		fmt.Printf("Next round in %d minute(s)\n\n", *r)
 		round++
