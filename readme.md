@@ -17,7 +17,7 @@ Program uses never-ending for{} cycle with pause between cycles,
 default pause is 30 minutes according to HN robots.txt. Please don't abuse HN :)
 
 ### Download
-[Linux](https://github.com/vetelko/hnwatch/releases/download/0.1/hnwatch.tar.gz)
+[Linux](https://github.com/vetelko/hnwatch/releases/download/0.1/hnwatch.tar.gz) binary
 
 ### Build
 ```
